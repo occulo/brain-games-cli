@@ -1,0 +1,15 @@
+{
+    "name": "hexlet/code",
+    "description": "A simple PHP-based CLI tool to test your brain with math problems",
+    "type": "project",
+    "license": "MIT",
+    "bin": [
+        "bin/brain-games"
+    ],
+    "require": {},
+    "autoload": {
+        "files": [
+            "src/Interaction.php"
+        ]
+    }
+}
