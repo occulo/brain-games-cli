@@ -1,11 +1,11 @@
-# install composer dependencies
-install:
+install: # install composer dependencies
 	composer install
 
-# validate the composer package
-validate:
+validate: # validate the composer package
 	composer validate
 
-# run the application
-brain-games:
+lint: # check code against PSR-12
+	composer exec --verbose phpcs -- --standard=PSR12 src bin
+
+brain-games: # run the application
 	./bin/brain-games
