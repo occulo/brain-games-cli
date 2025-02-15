@@ -1,2 +1,2 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/occulo/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/occulo/php-project-45/actions)
+[![Actions Status](https://github.com/occulo/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/occulo/php-project-45/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/6167462093e375e2a941/maintainability)](https://codeclimate.com/github/occulo/php-project-45/maintainability)
