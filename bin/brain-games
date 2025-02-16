@@ -3,8 +3,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use BrainGames\Interaction;
+use function BrainGames\Runner\welcomeUser as welcome;
 
-Interaction\showWelcomeMessage();
-$name = Interaction\getName();
-Interaction\greetUser($name);
+welcome();
