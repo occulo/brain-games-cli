@@ -14,13 +14,13 @@ function generateExpression(int $a, int $b): array
     ];
 
     $index = rand(0, count($operators) - 1);
+
     return $operators[$index]($a, $b);
 }
 
 function calcGame(): void
 {
     $description = "What is the result of the expression?";
-
     $question = fn() => generateExpression(rand(1, 100), rand(1, 100));
 
     gameRun($description, $question);
