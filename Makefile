@@ -9,3 +9,6 @@ lint: # check code against PSR-12
 
 brain-games: # run the application
 	./bin/brain-games
+
+brain-even: # run the 'is even' game
+	./bin/brain-even
