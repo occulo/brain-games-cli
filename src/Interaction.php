@@ -2,17 +2,12 @@
 
 namespace BrainGames\Interaction;
 
-function showWelcomeMessage()
+function showMessage(string $message)
 {
-    echo "Welcome to the Brain Games!\n";
+    echo "{$message}\n";
 }
 
-function getName(): string
+function getInput(string $input = ""): string
 {
-    return readline("May I have your name? ");
-}
-
-function greetUser(string $name)
-{
-    echo "Hello, {$name}!\n";
+    return readline("{$input} ");
 }
