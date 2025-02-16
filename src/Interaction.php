@@ -2,12 +2,12 @@
 
 namespace BrainGames\Interaction;
 
-function showMessage(string $message)
+function showMessage(string $message): void
 {
     echo "{$message}\n";
 }
 
-function getInput(string $input = ""): string
+function getInput(string $prompt = ""): string
 {
-    return readline("{$input} ");
+    return readline("{$prompt} ");
 }

@@ -5,7 +5,7 @@ namespace BrainGames\Runner;
 use function BrainGames\Interaction\showMessage;
 use function BrainGames\Interaction\getInput;
 
-function welcomeUser()
+function welcomeUser(): string
 {
     showMessage("Welcome to the Brain Games!");
     $name = ucfirst(getInput("May I have your name?"));
@@ -14,24 +14,25 @@ function welcomeUser()
     return $name;
 }
 
-function gameRun(string $description, callable $currentRound)
+function gameRun(string $description, callable $currentRound): void
 {
     $name = welcomeUser();
     showMessage($description);
 
     $gameRounds = 3;
 
-    for ($i = 0; $i < $gameRounds; $i++) { 
+    for ($i = 0; $i < $gameRounds; $i++) {
         [$question, $answer] = $currentRound();
 
         showMessage("Question: {$question}");
         $userAnswer = ucfirst(getInput("Answer:"));
 
-        if ($answer === $userAnswer) {
+        if ($answer == $userAnswer) {
             showMessage("Correct!");
         } else {
             showMessage("'{$userAnswer}' is the wrong answer. The correct answer was '{$answer}'.");
             showMessage("Let's try again, {$name}!");
+
             return;
         }
     }
