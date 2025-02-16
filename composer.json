@@ -11,7 +11,9 @@
     },
     "autoload": {
         "files": [
-            "src/Interaction.php"
+            "src/Interaction.php",
+            "src/GameRunner.php",
+            "src/Games/Even.php"
         ]
     }
 }
