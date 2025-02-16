@@ -12,3 +12,6 @@ brain-games: # run the application
 
 brain-even: # run the 'is even' game
 	./bin/brain-even
+
+brain-calc: # run the 'calculate' game
+	./bin/brain-calc
