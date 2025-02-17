@@ -21,3 +21,6 @@ brain-gcd: # run the 'gcd' game
 
 brain-prog: # run the 'progression' game
 	./bin/brain-prog
+
+brain-prime: # run the 'is prime' game
+	./bin/brain-prime
