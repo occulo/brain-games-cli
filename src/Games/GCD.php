@@ -2,7 +2,6 @@
 
 namespace BrainGames\GCD;
 
-use function BrainGames\Interaction\showMessage;
 use function BrainGames\Runner\gameRun;
 
 function calculateGCD(int $a, int $b): int

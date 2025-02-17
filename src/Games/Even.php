@@ -2,7 +2,6 @@
 
 namespace BrainGames\Even;
 
-use function BrainGames\Interaction\showMessage;
 use function BrainGames\Runner\gameRun;
 
 function isEven(int $num): bool

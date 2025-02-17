@@ -2,7 +2,6 @@
 
 namespace BrainGames\Calc;
 
-use function BrainGames\Interaction\showMessage;
 use function BrainGames\Runner\gameRun;
 
 function generateExpression(int $a, int $b): array
