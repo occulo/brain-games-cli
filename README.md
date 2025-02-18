@@ -10,7 +10,7 @@ make install
 ```
 This will install all required Composer dependencies.
 
-[![asciicast](https://asciinema.org/a/rh2ockykH3efKkaJLPc9zIq5m.svg)](https://asciinema.org/a/rh2ockykH3efKkaJLPc9zIq5m)
+[![asciicast](https://asciinema.org/a/j1wYJOgo1qNbuwwNAXeCMl0dB.svg)](https://asciinema.org/a/j1wYJOgo1qNbuwwNAXeCMl0dB)
 
 ---
 
@@ -21,32 +21,32 @@ Determine whether a given number is even.
 ```bash
 make brain-even
 ```
-[![asciicast](https://asciinema.org/a/SYb8wCf4RfWfVFbi2Kflt3smn.svg)](https://asciinema.org/a/SYb8wCf4RfWfVFbi2Kflt3smn)
+[![asciicast](https://asciinema.org/a/l4sAYIiVhWj7KSrZjqStGitNs.svg)](https://asciinema.org/a/l4sAYIiVhWj7KSrZjqStGitNs)
 
 ### Calculate
 Solve the arithmetic expression and provide the correct answer.
 ```bash
 make brain-calc
 ```
-[![asciicast](https://asciinema.org/a/FeKnFO3KJOgkEloU8OuFNSN7k.svg)](https://asciinema.org/a/FeKnFO3KJOgkEloU8OuFNSN7k)
+[![asciicast](https://asciinema.org/a/TwRIfqHMhJxMEWNDtbDHukcD8.svg)](https://asciinema.org/a/TwRIfqHMhJxMEWNDtbDHukcD8)
 
 ### GCD
 Find the greatest common divisor of two given numbers.
 ```bash
 make brain-gcd
 ```
-[![asciicast](https://asciinema.org/a/QeXohTG9FU7VbeavcOVyrvrAQ.svg)](https://asciinema.org/a/QeXohTG9FU7VbeavcOVyrvrAQ)
+[![asciicast](https://asciinema.org/a/P8LMvGpLAppxGTvgz2rqA3t8Y.svg)](https://asciinema.org/a/P8LMvGpLAppxGTvgz2rqA3t8Y)
 
 ### Progression
 Identify the missing number in an arithmetic progression.
 ```bash
-make brain-prog
+make brain-progression
 ```
-[![asciicast](https://asciinema.org/a/K0IOBihaSdW5TtbMCUWQ9T9gI.svg)](https://asciinema.org/a/K0IOBihaSdW5TtbMCUWQ9T9gI)
+[![asciicast](https://asciinema.org/a/DteqdAm6mKXNIkUz3jsJn0Qyz.svg)](https://asciinema.org/a/DteqdAm6mKXNIkUz3jsJn0Qyz)
 
 ### Prime
 Determine whether a given number is prime.
 ```bash
 make brain-prime
 ```
-[![asciicast](https://asciinema.org/a/l2Y2K8FjdZSrJ3rqKYexH0asE.svg)](https://asciinema.org/a/l2Y2K8FjdZSrJ3rqKYexH0asE)
+[![asciicast](https://asciinema.org/a/tNPohrxXDeEeUFMhKdOpr8V3V.svg)](https://asciinema.org/a/tNPohrxXDeEeUFMhKdOpr8V3V)
