@@ -63,4 +63,4 @@ Determine whether a given number is prime.
 ```bash
 make brain-prime
 ```
-[![asciicast](https://asciinema.org/a/tNPohrxXDeEeUFMhKdOpr8V3V.svg)](https://asciinema.org/a/tNPohrxXDeEeUFMhKdOpr8V3V)
+[![asciicast](https://asciinema.org/a/e1B4dBJrrmsJg3cAfKXQG1l5d.svg)](https://asciinema.org/a/e1B4dBJrrmsJg3cAfKXQG1l5d)
