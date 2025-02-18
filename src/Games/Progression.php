@@ -27,7 +27,7 @@ function generateProg(int $step, int $length): array
 
 function progGame(): void
 {
-    $description = "What number is missing in the progression?";
+    $description = 'What number is missing in the progression?';
     $question = fn() => generateProg(rand(1, 11), 10);
 
     runGame($description, $question);

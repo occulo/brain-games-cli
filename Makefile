@@ -19,8 +19,8 @@ brain-calc: # run the 'calculate' game
 brain-gcd: # run the 'gcd' game
 	./bin/brain-gcd
 
-brain-prog: # run the 'progression' game
-	./bin/brain-prog
+brain-progression: # run the 'progression' game
+	./bin/brain-progression
 
 brain-prime: # run the 'is prime' game
 	./bin/brain-prime

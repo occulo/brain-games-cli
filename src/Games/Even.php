@@ -18,7 +18,7 @@ function generateNumber(int $num): array
 
 function evenGame(): void
 {
-    $description = "Answer 'Yes' if the number is even, otherwise answer 'No'.";
+    $description = 'Answer "yes" if the number is even, otherwise answer "no".';
     $question = fn() => generateNumber(rand(1, 100));
 
     runGame($description, $question);

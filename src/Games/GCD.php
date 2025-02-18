@@ -24,7 +24,7 @@ function generatePair(int $a, int $b): array
 
 function gcdGame(): void
 {
-    $description = "Find the greatest common divisor of given numbers.";
+    $description = 'Find the greatest common divisor of given numbers.';
     $question = fn() => generatePair(rand(1, 100), rand(1, 100));
 
     runGame($description, $question);

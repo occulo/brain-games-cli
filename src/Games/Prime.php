@@ -28,7 +28,7 @@ function generateNumber(int $num): array
 
 function primeGame(): void
 {
-    $description = "Answer 'Yes' if the number is prime, otherwise answer 'No'.";
+    $description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $question = fn() => generateNumber(rand(1, 100));
 
     runGame($description, $question);

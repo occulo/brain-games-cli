@@ -19,7 +19,7 @@ function generateExpression(int $a, int $b): array
 
 function calcGame(): void
 {
-    $description = "What is the result of the expression?";
+    $description = 'What is the result of the expression?';
     $question = fn() => generateExpression(rand(1, 100), rand(1, 100));
 
     runGame($description, $question);
