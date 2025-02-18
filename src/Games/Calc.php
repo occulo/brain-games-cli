@@ -2,7 +2,7 @@
 
 namespace BrainGames\Calc;
 
-use function BrainGames\Runner\gameRun;
+use function BrainGames\Engine\runGame;
 
 function generateExpression(int $a, int $b): array
 {
@@ -22,5 +22,5 @@ function calcGame(): void
     $description = "What is the result of the expression?";
     $question = fn() => generateExpression(rand(1, 100), rand(1, 100));
 
-    gameRun($description, $question);
+    runGame($description, $question);
 }

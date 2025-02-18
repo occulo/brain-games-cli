@@ -2,7 +2,7 @@
 
 namespace BrainGames\Prog;
 
-use function BrainGames\Runner\gameRun;
+use function BrainGames\Engine\runGame;
 
 function hideElement(array $prog): array
 {
@@ -30,5 +30,5 @@ function progGame(): void
     $description = "What number is missing in the progression?";
     $question = fn() => generateProg(rand(1, 11), 10);
 
-    gameRun($description, $question);
+    runGame($description, $question);
 }

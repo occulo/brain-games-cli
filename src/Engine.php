@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Runner;
+namespace BrainGames\Engine;
 
 use function BrainGames\Interaction\showMessage;
 use function BrainGames\Interaction\getInput;
@@ -31,7 +31,7 @@ function playRound(string $name, callable $currentRound): bool
     }
 }
 
-function gameRun(string $description, callable $currentRound): void
+function runGame(string $description, callable $currentRound): void
 {
     $name = welcomeUser();
     showMessage($description);

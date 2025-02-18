@@ -2,7 +2,7 @@
 
 namespace BrainGames\GCD;
 
-use function BrainGames\Runner\gameRun;
+use function BrainGames\Engine\runGame;
 
 function calculateGCD(int $a, int $b): int
 {
@@ -27,5 +27,5 @@ function gcdGame(): void
     $description = "Find the greatest common divisor of given numbers.";
     $question = fn() => generatePair(rand(1, 100), rand(1, 100));
 
-    gameRun($description, $question);
+    runGame($description, $question);
 }

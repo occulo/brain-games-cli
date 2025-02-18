@@ -3,6 +3,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Runner\welcomeUser as welcome;
+use function BrainGames\Engine\welcomeUser as welcome;
 
 welcome();

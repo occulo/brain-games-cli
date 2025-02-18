@@ -2,7 +2,7 @@
 
 namespace BrainGames\Prime;
 
-use function BrainGames\Runner\gameRun;
+use function BrainGames\Engine\runGame;
 
 function isPrime(int $num): bool
 {
@@ -31,5 +31,5 @@ function primeGame(): void
     $description = "Answer 'Yes' if the number is prime, otherwise answer 'No'.";
     $question = fn() => generateNumber(rand(1, 100));
 
-    gameRun($description, $question);
+    runGame($description, $question);
 }
