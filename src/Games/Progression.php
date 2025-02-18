@@ -10,9 +10,7 @@ function hideElement(array $prog): array
     $answer = $prog[$index];
     $prog[$index] = '..';
 
-    $question = implode(' ', $prog);
-
-    return [$question, $answer];
+    return [implode(' ', $prog), $answer];
 }
 
 function generateProg(int $step, int $length): array
