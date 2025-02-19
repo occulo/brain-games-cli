@@ -2,50 +2,32 @@
 
 namespace BrainGames\Engine;
 
-use function BrainGames\Interaction\showMessage;
-use function BrainGames\Interaction\getInput;
+use function BrainGames\Interaction\welcomeUser;
 
-function welcomeUser(): string
-{
-    showMessage("Welcome to the Brain Games!");
-    $name = ucfirst(getInput("May I have your name?"));
-    showMessage("Hello, {$name}!");
-
-    return $name;
-}
-
-function playRound(string $name, callable $currentRound): bool
-{
-    [$question, $correctAnswer] = $currentRound();
-
-    showMessage("Question: {$question}");
-    $userAnswer = ucfirst(getInput("Answer:"));
-
-    if ($correctAnswer == $userAnswer) {
-        showMessage("Correct!");
-        return true;
-    } else {
-        showMessage("'{$userAnswer}' is the wrong answer. The correct answer was '{$correctAnswer}'.");
-        showMessage("Let's try again, {$name}!");
-        return false;
-    }
-}
+use function cli\line;
+use function cli\prompt;
 
 function runGame(string $description, callable $currentRound): void
 {
     $name = welcomeUser();
-    showMessage($description);
+    line($description);
 
     $gameRounds = 3;
-    $successfulRounds = 0;
 
-    while ($successfulRounds < $gameRounds) {
-        if (playRound($name, $currentRound)) {
-            $successfulRounds++;
+    for ($i = 0; $i < $gameRounds; $i++) { 
+        [$question, $correctAnswer] = $currentRound();
+
+        line("Question: {$question}");
+        $userAnswer = prompt("Answer");
+
+        if (strcasecmp($correctAnswer, $userAnswer) == 0) {
+            line("Correct!");
         } else {
+            line("'{$userAnswer}' is the wrong answer. The correct answer was '{$correctAnswer}'.");
+            line("Let's try again, {$name}!");
             return;
         }
     }
 
-    showMessage("Congratulations, {$name}!");
+    line("Congratulations, {$name}!");
 }
