@@ -24,5 +24,8 @@
             "src/Games/Progression.php",
             "src/Games/Prime.php"
         ]
+    },
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.1"
     }
 }
