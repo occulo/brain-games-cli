@@ -1,28 +1,28 @@
 <?php
 
-namespace BrainGames\Prog;
+namespace BrainGames\Progression;
 
 use function BrainGames\Engine\runGame;
 
-function hideElement(array $prog): array
+function hideElement(array $progression): array
 {
-    $index = rand(0, count($prog) - 1);
-    $answer = $prog[$index];
-    $prog[$index] = '..';
+    $index = rand(0, count($progression) - 1);
+    $answer = $progression[$index];
+    $progression[$index] = '..';
 
-    return [implode(' ', $prog), $answer];
+    return [implode(' ', $progression), $answer];
 }
 
 function generateQuestion(int $step, int $length): array
 {
     $start = rand(1, 100);
-    $prog = [];
+    $progression = [];
 
     for ($i = 1; $i < $length; $i++) {
-        $prog[] = $start + $i * $step;
+        $progression[] = $start + $i * $step;
     }
 
-    return hideElement($prog);
+    return hideElement($progression);
 }
 
 function startGame(): void
