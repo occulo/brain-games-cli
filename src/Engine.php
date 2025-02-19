@@ -3,7 +3,6 @@
 namespace BrainGames\Engine;
 
 use function BrainGames\Interaction\welcomeUser;
-
 use function cli\line;
 use function cli\prompt;
 
@@ -14,7 +13,7 @@ function runGame(string $description, callable $currentRound): void
 
     $gameRounds = 3;
 
-    for ($i = 0; $i < $gameRounds; $i++) { 
+    for ($i = 0; $i < $gameRounds; $i++) {
         [$question, $correctAnswer] = $currentRound();
 
         line("Question: {$question}");
