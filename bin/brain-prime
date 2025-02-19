@@ -3,6 +3,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Prime\primeGame as startGame;
+use function BrainGames\Prime\startGame;
 
 startGame();
