@@ -2,12 +2,14 @@
 
 namespace BrainGames\Interaction;
 
-function showMessage(string $message): void
-{
-    echo "{$message}\n";
-}
+use function cli\line;
+use function cli\prompt;
 
-function getInput(string $prompt = ""): string
+function welcomeUser(): string
 {
-    return readline("{$prompt} ");
+    line("Welcome to the Brain Games!");
+    $name = prompt("May I have your name?", false, ' ');
+    line("Hello, {$name}!");
+
+    return $name;
 }
