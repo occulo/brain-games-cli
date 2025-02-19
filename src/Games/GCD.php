@@ -15,17 +15,17 @@ function calculateGCD(int $a, int $b): int
     return $a;
 }
 
-function generatePair(int $a, int $b): array
+function generateQuestion(int $a, int $b): array
 {
     $gcd = calculateGCD($a, $b);
 
     return ["{$a} {$b}", $gcd];
 }
 
-function gcdGame(): void
+function startGame(): void
 {
     $description = 'Find the greatest common divisor of given numbers.';
-    $question = fn() => generatePair(rand(1, 100), rand(1, 100));
+    $question = fn() => generateQuestion(rand(1, 100), rand(1, 100));
 
     runGame($description, $question);
 }
