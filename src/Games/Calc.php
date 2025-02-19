@@ -16,7 +16,8 @@ function generateQuestion(int $a, int $b): array
     $expression = match ($operator) {
         '+' => $a + $b,
         '-' => $a - $b,
-        '*' => $a * $b
+        '*' => $a * $b,
+        default => 0
     };
 
     return ["{$a} {$operator} {$b}", $expression];
