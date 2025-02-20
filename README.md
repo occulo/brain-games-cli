@@ -1,23 +1,19 @@
 # Brain Games
-### Hexlet tests and linter status:
 [![Actions Status](https://github.com/occulo/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/occulo/php-project-45/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/6167462093e375e2a941/maintainability)](https://codeclimate.com/github/occulo/php-project-45/maintainability)
-
----
 
 ## Description
 Brain Games is a set of arithmetic CLI games built with PHP. Each game tests the player's logic skills with different challenges.
 
 ## Prerequisites
-
 * Linux, MacOS, WSL
-* PHP >=8.2
+* PHP >=7.4
 * Make
 * Git
 
 ## Installation
 To get started, run:
 ```bash
-git clone https://github.com/occulo/php-project-45.git
+git clone https://github.com/occulo/brain-games-cli.git
 make install
 ```
 This will clone the repository to your machine and install all required Composer dependencies.
