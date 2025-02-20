@@ -10,14 +10,14 @@ function getOperator(): string
     return $operators[array_rand($operators)];
 }
 
-function generateQuestion(int $a, int $b): array
+function getQuestionAndAnswer(int $a, int $b): array
 {
     $operator = getOperator();
     $expression = match ($operator) {
         '+' => $a + $b,
         '-' => $a - $b,
         '*' => $a * $b,
-        default => 0
+        default => null
     };
 
     return ["{$a} {$operator} {$b}", $expression];
@@ -26,7 +26,7 @@ function generateQuestion(int $a, int $b): array
 function startGame(): void
 {
     $description = 'What is the result of the expression?';
-    $question = fn() => generateQuestion(rand(1, 100), rand(1, 100));
+    $questionAndAnswer = fn() => getQuestionAndAnswer(rand(1, 100), rand(1, 100));
 
-    runGame($description, $question);
+    runGame($description, $questionAndAnswer);
 }

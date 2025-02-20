@@ -19,7 +19,7 @@ function isPrime(int $num): bool
     return true;
 }
 
-function generateQuestion(int $num): array
+function getQuestionAndAnswer(int $num): array
 {
     $answer = isPrime($num) ? "Yes" : "No";
 
@@ -29,7 +29,7 @@ function generateQuestion(int $num): array
 function startGame(): void
 {
     $description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-    $question = fn() => generateQuestion(rand(1, 100));
+    $questionAndAnswer = fn() => getQuestionAndAnswer(rand(1, 100));
 
-    runGame($description, $question);
+    runGame($description, $questionAndAnswer);
 }

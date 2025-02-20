@@ -9,7 +9,7 @@ function isEven(int $num): bool
     return $num % 2 === 0;
 }
 
-function generateQuestion(int $num): array
+function getQuestionAndAnswer(int $num): array
 {
     $answer = isEven($num) ? "Yes" : "No";
 
@@ -19,7 +19,7 @@ function generateQuestion(int $num): array
 function startGame(): void
 {
     $description = 'Answer "yes" if the number is even, otherwise answer "no".';
-    $question = fn() => generateQuestion(rand(1, 100));
+    $questionAndAnswer = fn() => getQuestionAndAnswer(rand(1, 100));
 
-    runGame($description, $question);
+    runGame($description, $questionAndAnswer);
 }
