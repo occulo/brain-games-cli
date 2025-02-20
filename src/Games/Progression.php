@@ -13,7 +13,7 @@ function hideElement(array $progression): array
     return [implode(' ', $progression), $answer];
 }
 
-function getQuestionAndAnswer(int $step, int $length): array
+function getRound(int $step, int $length): array
 {
     $start = rand(1, 100);
     $progression = [];
@@ -28,7 +28,7 @@ function getQuestionAndAnswer(int $step, int $length): array
 function startGame(): void
 {
     $description = 'What number is missing in the progression?';
-    $questionAndAnswer = fn() => getQuestionAndAnswer(rand(1, 11), 10);
+    $questionAndAnswer = fn() => getRound(rand(1, 11), 10);
 
     runGame($description, $questionAndAnswer);
 }

@@ -10,7 +10,7 @@ function getOperator(): string
     return $operators[array_rand($operators)];
 }
 
-function getQuestionAndAnswer(int $a, int $b): array
+function getRound(int $a, int $b): array
 {
     $operator = getOperator();
     $expression = match ($operator) {
@@ -26,7 +26,7 @@ function getQuestionAndAnswer(int $a, int $b): array
 function startGame(): void
 {
     $description = 'What is the result of the expression?';
-    $questionAndAnswer = fn() => getQuestionAndAnswer(rand(1, 100), rand(1, 100));
+    $questionAndAnswer = fn() => getRound(rand(1, 100), rand(1, 100));
 
     runGame($description, $questionAndAnswer);
 }

@@ -6,7 +6,7 @@ use function BrainGames\Interaction\welcomeUser;
 use function cli\line;
 use function cli\prompt;
 
-function runGame(string $description, callable $getQuestionAndAnswer): void
+function runGame(string $description, callable $getRound): void
 {
     $name = welcomeUser();
     line($description);
@@ -14,7 +14,7 @@ function runGame(string $description, callable $getQuestionAndAnswer): void
     $roundsCount = 3;
 
     for ($i = 0; $i < $roundsCount; $i++) {
-        [$question, $correctAnswer] = $getQuestionAndAnswer();
+        [$question, $correctAnswer] = $getRound();
 
         line("Question: {$question}");
         $userAnswer = prompt("Answer");
